@@ -10,9 +10,52 @@
   text-align: left;
 }
 
-/* Fonts assumed to be already imported */
+nav {
+  background-color: #495E57;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1140px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  height: 40px;
+}
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 6rem;
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.nav-list a:hover {
+  color: #F4CE14;
+}
 .header {
-  background-color: #F4CE14; /* Accent yellow */
+  background-color: #F4CE14;
   padding: 4rem 2rem;
   display: flex;
   justify-content: center;
@@ -22,7 +65,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 960px;
+  max-width: 1140px;
   width: 100%;
   gap: 2rem;
 }
@@ -34,17 +77,19 @@
 .display-title {
   font-family: 'Markazi Text', serif;
   font-size: 64pt;
-  font-weight: 500;
+  font-weight: 1000;
   margin: 0;
   color: #333;
+  margin-bottom: 0.5rem;
 }
 
 .location {
   font-family: 'Markazi Text', serif;
   font-size: 24pt;
-  font-weight: 500;
+  font-weight: 1000;
   margin: 0;
   color: #333;
+  margin-bottom: 1.5rem;
 }
 
 .lead-text {
@@ -52,6 +97,7 @@
   font-size: 18pt;
   margin: 1rem 0;
   color: #333;
+  margin-bottom: 2rem;
 }
 
 .cta-button {
@@ -73,63 +119,156 @@
 .header-image {
   flex: 1;
   display: flex;
+  border-radius: 8px;
   justify-content: center;
 }
 
 .header-image img {
   max-width: 100%;
   height: auto;
-  border: 1px solid #333;
+  border-radius: 8px;
 }
 
-nav {
-  background-color: #495E57; /* primary green */
-  padding: 1rem;
-  display: flex;
-  justify-content: center; /* centers the content horizontally */
+.specials-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  max-width: 1140px;
+  margin: 0 auto;
 }
-.nav-container {
+
+.specials-header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  gap: 2rem; /* controls space between logo and Home */
+  margin-bottom: 2rem;
 }
 
-.nav-logo {
-  height: 40px;
-}
-
-.nav-list {
-  display: flex;
-  align-items: center;
-  list-style: none;
+.specials-header h2 {
+  font-family: 'Markazi Text', serif;
+  font-size: 48pt;
+  color: #333;
   margin: 0;
-  padding: 0;
-  gap: 1.5rem; /* space between nav items */
 }
 
-/* Nav Links */
-.nav-list a {
+.online-menu-btn {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 16pt;
+  font-family: 'Karla', sans-serif;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.online-menu-btn:hover {
+  background-color: #495E57;
+}
+
+.specials-cards {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.special-card {
+  background-color: #fefefe;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  flex: 1;
+  min-width: 280px;
+  max-width: 300px;
+}
+
+.special-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-info {
+  padding: 1rem;
+  font-family: 'Karla', sans-serif;
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18pt;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.price {
+  color: #EE9972; /* warm orange */
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.card-info p {
+  font-size: 14pt;
+  margin-bottom: 1rem;
+}
+
+.order-link {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+.footer {
+  background-color: #495E57;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.footer-logo img {
+  height: 200px;
+  object-fit: contain;
+}
+
+.footer-column {
+  flex: 1;
+  min-width: 180px;
+}
+
+.footer-column h4 {
+  font-family: 'Karla', sans-serif;
+  font-weight: 700;
+  font-size: 16pt;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column li {
+  margin-bottom: 0.5rem;
+  font-family: 'Karla', sans-serif;
+  font-size: 14pt;
+}
+
+.footer-column a {
   text-decoration: none;
   color: white;
-  font-weight: 500;
-  font-size: 16pt;
 }
 
-.nav-list a:hover {
+.footer-column a:hover {
   color: #F4CE14;
-}
-
-main {
-  grid-area: main;
-  padding: 1.5rem;
-}
-
-footer {
-  grid-area: footer;
-  background-color: #282c34;
-  color: white;
-  text-align: center;
-  padding: 1rem;
 }
 
 .App-logo {

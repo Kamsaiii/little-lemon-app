@@ -1,43 +1,45 @@
 import React from 'react';
-import footerlogo from "./footerlogo.png";
 
-const Footer = () => {
-    return(
-        <footer>
-            <section>
-                <div>
-                    <img src={footerlogo} />
+function Footer() {
+    return (
+        <footer className="footer">
+            <div className="footer-container">
+                <div className="footer-logo">
+                    <img src="https://littlelemon.cyruscsc.com/images/littlelemon-og-image.jpg" alt="Little Lemon Logo" />
                 </div>
-                <div>
-                    <h3>Navigation</h3>
+
+                <div className="footer-column">
+                    <h4>Navigation</h4>
                     <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Reservations</li>
-                        <li>Order Online</li>
-                        <li>Login</li>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/about">About</a></li>
+                        <li><a href="/menu">Menu</a></li>
+                        <li><a href="/reservations">Reservations</a></li>
+                        <li><a href="/orderonline">Order Online</a></li>
+                        <li><a href="/login">Login</a></li>
                     </ul>
                 </div>
-                <div>
-                    <h3>Contact</h3>
+
+                <div className="footer-column">
+                    <h4>Contact</h4>
                     <ul>
-                        <li>Address</li>
-                        <li>Phone Number</li>
-                        <li>Email</li>
+                        <li>123 Lemon St, Chicago</li>
+                        <li>(123) 456-7890</li>
+                        <li>hello@littlelemon.com</li>
                     </ul>
                 </div>
-                <div>
-                <h3>Follow Us</h3>
-                <ul>
-                    <li>Instagram</li>
-                    <li>Facebook</li>
-                    <li>Youtube</li>
-                </ul>
+
+                <div className="footer-column">
+                    <h4>Social Media Links</h4>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Youtube</li>
+                    </ul>
                 </div>
-            </section>
+            </div>
         </footer>
-    )
+    );
 }
 
 export default Footer;

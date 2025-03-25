@@ -1,5 +1,4 @@
 import React from 'react';
-import headerImage from './logonotext.png';
 
 function Header() {
     return (
@@ -14,7 +13,7 @@ function Header() {
                     <button className="cta-button">Reserve a Table</button>
                 </div>
                 <div className="header-image">
-                    <img src={headerImage} alt="Little Lemon dish" />
+                    <img src="https://www.themediterraneandish.com/wp-content/uploads/2023/07/TMD-Lemon-Garlic-Chicken-WEB-26.jpg" alt="Little Lemon dish" />
                 </div>
             </section>
         </header>
