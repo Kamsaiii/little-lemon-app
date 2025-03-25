@@ -533,14 +533,14 @@ nav {
 .booking-section button[type="submit"]:hover {
   background-color: #e3b800;
 }
-.booking-section input[type="date"],
+.booking-section input,
 .booking-section select,
 .booking-section button[type="submit"] {
-  max-width: 250px;
+  max-width: 100%;
   width: 100%;
   box-sizing: border-box;
-  margin: 0 auto;
 }
+
 
 /* CONFIRMED BOOKING PAGE */
 .confirmed-booking {

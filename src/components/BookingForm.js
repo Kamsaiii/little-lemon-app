@@ -1,6 +1,12 @@
 import React from 'react';
 
 function BookingForm({
+  name,
+  setName,
+  email,
+  setEmail,
+  guests,
+  setGuests,
   date,
   setDate,
   time,
@@ -20,13 +26,38 @@ function BookingForm({
   const isFormValid = date !== '' && time !== '';
 
   return (
-    <form
-      onSubmit={onSubmit}
-      style={{ display: 'grid', maxWidth: '200px', gap: '20px' }}
-      aria-labelledby="booking-form-heading"
-    >
+<form
+  onSubmit={onSubmit}
+  aria-labelledby="booking-form-heading"
+>
       <h2 id="booking-form-heading" className="sr-only">Table Reservation Form</h2>
 
+      <label htmlFor="res-name">Name</label>
+      <input
+  type="text"
+  id="res-name"
+  value={name}
+  onChange={(e) => setName(e.target.value)}
+  required
+/>
+<label htmlFor="email">Email</label>
+<input
+  type="email"
+  id="res-email"
+  value={email}
+  onChange={(e) => setEmail(e.target.value)}
+  required
+/>
+<label htmlFor="guests">Number of guests</label>
+<input
+  type="number"
+  id="res-guests"
+  min="1"
+  max="10"
+  value={guests}
+  onChange={(e) => setGuests(e.target.value)}
+  required
+/>
       <label htmlFor="res-date">Choose date</label>
       <input
         type="date"
