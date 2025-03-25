@@ -2,7 +2,9 @@ import React from 'react';
 import logonotext from "./images/logonotext.png";
 import { Link } from 'react-router-dom';
 
-function Nav() {
+function Nav({ cartItems }) {
+  const cartItemCount = cartItems.reduce((total, item) => total + item.quantity, 0);
+
   return (
     <nav className="Nav">
       <div className="nav-container">
@@ -14,6 +16,11 @@ function Nav() {
           <li><Link to="/reservations">Reservations</Link></li>
           <li><Link to="/orderonline">Order Online</Link></li>
           <li><Link to="/login">Login</Link></li>
+          <li className="cart-icon">
+            <Link to="/cart">
+              🛒 {cartItemCount > 0 && <span className="cart-count">{cartItemCount}</span>}
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

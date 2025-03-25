@@ -3,9 +3,12 @@ import { Routes, Route, useNavigate } from 'react-router-dom';
 import Homepage from './components/Homepage';
 import BookingPage from './components/BookingPage';
 import ConfirmedBooking from './components/ConfirmedBooking';
+import About from './components/About';
+import Menu from './components/Menu';
+import OrderOnline from './components/OrderOnline';
 import { initializeTimes, updateTimes } from './bookingReducer';
 
-function Main() {
+function Main({ addToCart }) {
   const navigate = useNavigate();
 
   const submitForm = async (formData) => {
@@ -41,6 +44,9 @@ function Main() {
           }
         />
         <Route path="/confirmed" element={<ConfirmedBooking />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/menu" element={<Menu />} />
+        <Route path="/orderonline" element={<OrderOnline addToCart={addToCart} />} />
       </Routes>
     </main>
   );
