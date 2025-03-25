@@ -461,3 +461,141 @@ nav {
   height: 1px;
   overflow: hidden;
 }
+
+/* RESERVATION / BOOKING PAGE */
+
+.booking-section {
+  background-color: #edefee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem 2rem;
+  font-family: 'Karla', sans-serif;
+  color: #333;
+  min-height: 100vh;
+}
+
+.booking-section h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 48pt;
+  margin-bottom: 2rem;
+  color: #495e57;
+}
+
+/* Booking Form styling */
+.booking-section form {
+  background-color: #fff;
+  padding: 2rem 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: grid;
+  gap: 1.25rem;
+}
+
+.booking-section label {
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  font-size: 14pt;
+  display: block;
+}
+
+.booking-section input,
+.booking-section select {
+  padding: 0.75rem;
+  font-size: 14pt;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  width: 100%;
+  font-family: 'Karla', sans-serif;
+}
+
+.booking-section input:focus,
+.booking-section select:focus {
+  outline: none;
+  border-color: #495e57;
+  box-shadow: 0 0 0 2px rgba(73, 94, 87, 0.2);
+}
+
+.booking-section button[type="submit"] {
+  background-color: #f4ce14;
+  color: #333;
+  padding: 0.75rem;
+  font-size: 16pt;
+  font-weight: 700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Karla', sans-serif;
+}
+
+.booking-section button[type="submit"]:hover {
+  background-color: #e3b800;
+}
+.booking-section input[type="date"],
+.booking-section select,
+.booking-section button[type="submit"] {
+  max-width: 250px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+/* CONFIRMED BOOKING PAGE */
+.confirmed-booking {
+  background-color: #edefee;
+  color: #333;
+  font-family: 'Karla', sans-serif;
+  padding: 6rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.confirmed-booking h1 {
+  font-family: 'Markazi Text', serif;
+  font-size: 48pt;
+  color: #495e57;
+  margin-bottom: 1rem;
+}
+
+.confirmed-booking p {
+  font-size: 18pt;
+  color: #333;
+  max-width: 600px;
+}
+
+.confirmed-booking img {
+  width: 120px;
+  height: auto;
+  border-radius: 16px;
+  margin-bottom: 2rem;
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+/* Wiggle animation */
+@keyframes wiggle {
+  0%, 100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(3deg);
+  }
+  75% {
+    transform: rotate(-3deg);
+  }
+}
+
+/* Accessible hidden text */
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
