@@ -1,18 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+import headerImage from './logonotext.png';
 
 function Header() {
     return (
-        <header>
-            <section>
-                <div>
-                    <h1>Little Lemon</h1>
-                    <h3>Chicago</h3>
-                    <p>We are family owned Meditteranean Restaurant</p>
+        <header className="header">
+            <section className="header-section">
+                <div className="header-text">
+                    <h1 className="display-title">Little Lemon</h1>
+                    <h3 className="location">Chicago</h3>
+                    <p className="lead-text">
+                        We are a family-owned Mediterranean restaurant, focused on traditional recipes served with a modern twist.
+                    </p>
+                    <button className="cta-button">Reserve a Table</button>
                 </div>
-            <div>
-            <img src={logo} alt="Little Lemon Logo" />
-            </div>
+                <div className="header-image">
+                    <img src={headerImage} alt="Little Lemon dish" />
+                </div>
             </section>
         </header>
     );

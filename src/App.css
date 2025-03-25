@@ -1,8 +1,8 @@
 .App {
   display: grid;
   grid-template-areas:
-  "header"
   "nav"
+  "header"
   "main"
   "footer";
   grid-template-rows: auto auto 1fr auto;
@@ -10,17 +10,113 @@
   text-align: left;
 }
 
-header {
-  grid-area: header;
-  background-color: #f4f4f4;
-  padding: 1rem;
-  text-align: center;
+/* Fonts assumed to be already imported */
+.header {
+  background-color: #F4CE14; /* Accent yellow */
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.display-title {
+  font-family: 'Markazi Text', serif;
+  font-size: 64pt;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.location {
+  font-family: 'Markazi Text', serif;
+  font-size: 24pt;
+  font-weight: 500;
+  margin: 0;
+  color: #333;
+}
+
+.lead-text {
+  font-family: 'Karla', sans-serif;
+  font-size: 18pt;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.cta-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 16pt;
+  font-family: 'Karla', sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.cta-button:hover {
+  background-color: #495E57;
+}
+
+.header-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.header-image img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #333;
 }
 
 nav {
-  grid-area: nav;
-  background-color: #e1e1e1;
+  background-color: #495E57; /* primary green */
   padding: 1rem;
+  display: flex;
+  justify-content: center; /* centers the content horizontally */
+}
+.nav-container {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* controls space between logo and Home */
+}
+
+.nav-logo {
+  height: 40px;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1.5rem; /* space between nav items */
+}
+
+/* Nav Links */
+.nav-list a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 16pt;
+}
+
+.nav-list a:hover {
+  color: #F4CE14;
 }
 
 main {
