@@ -1,6 +1,6 @@
 import React from 'react';
 import logonotext from "./images/logonotext.png";
-import { Link } from 'react-router-dom'; // ✅ make sure this is imported
+import { Link } from 'react-router-dom';
 
 function Nav() {
   return (

@@ -1,20 +1,15 @@
 import React from 'react';
-import './App.css';
 import Nav from './components/Nav';
-import Header from './components/Header';
-import Specials from './components/Specials';
-import CustomersSay from './components/CustomersSay';
-import Chicago from './components/Chicago';
 import Footer from './components/Footer';
+import Main from './Main';
+import './App.css';
+
 
 function App() {
   return (
     <>
       <Nav />
-      <Header />
-      <Specials />
-      <CustomersSay />
-      <Chicago />
+      <Main />
       <Footer />
     </>
   );

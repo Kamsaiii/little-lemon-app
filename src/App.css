@@ -10,6 +10,8 @@
   text-align: left;
 }
 
+/* NAVIGATION BAR */
+
 nav {
   background-color: #495E57;
   padding: 1rem 2rem;
@@ -208,7 +210,7 @@ nav {
 }
 
 .price {
-  color: #EE9972; /* warm orange */
+  color: #EE9972;
   font-weight: bold;
   font-size: 14pt;
 }
@@ -347,6 +349,7 @@ nav {
 }
 
 /* Positioning for the overlap */
+
 .image-back {
   position: relative;
   left: -30px;
@@ -449,4 +452,12 @@ nav {
   to {
     transform: rotate(360deg);
   }
+}
+
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
