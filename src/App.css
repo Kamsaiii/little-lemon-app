@@ -1,5 +1,39 @@
 .App {
+  display: grid;
+  grid-template-areas:
+  "header"
+  "nav"
+  "main"
+  "footer";
+  grid-template-rows: auto auto 1fr auto;
+  min-height: 100vh;
+  text-align: left;
+}
+
+header {
+  grid-area: header;
+  background-color: #f4f4f4;
+  padding: 1rem;
   text-align: center;
+}
+
+nav {
+  grid-area: nav;
+  background-color: #e1e1e1;
+  padding: 1rem;
+}
+
+main {
+  grid-area: main;
+  padding: 1.5rem;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #282c34;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
 
 .App-logo {
