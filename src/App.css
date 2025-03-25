@@ -110,6 +110,7 @@ nav {
   font-weight: 500;
   cursor: pointer;
   border-radius: 8px;
+  text-decoration: none;
 }
 
 .cta-button:hover {
@@ -149,7 +150,7 @@ nav {
 
 .specials-header h2 {
   font-family: 'Markazi Text', serif;
-  font-size: 48pt;
+  font-size: 36pt;
   color: #333;
   margin: 0;
 }
@@ -177,7 +178,7 @@ nav {
 }
 
 .special-card {
-  background-color: #fefefe;
+  background-color: #FAFAFA;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -234,7 +235,7 @@ nav {
 
 .testimonials-title {
   font-family: 'Markazi Text', serif;
-  font-size: 48pt;
+  font-size: 32pt;
   color: #333;
   margin-bottom: 3rem;
 }

@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import Nav from './components/Nav';
 import Header from './components/Header';
-import Main from './components/Main';
+import Specials from './components/Specials';
 import CustomersSay from './components/CustomersSay';
 import Chicago from './components/Chicago';
 import Footer from './components/Footer';
@@ -12,7 +12,7 @@ function App() {
     <>
       <Nav />
       <Header />
-      <Main />
+      <Specials />
       <CustomersSay />
       <Chicago />
       <Footer />
