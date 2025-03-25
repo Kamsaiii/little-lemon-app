@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import Header from './components/Header';
 import Nav from './components/Nav';
+import Header from './components/Header';
 import Main from './components/Main';
+import CustomersSay from './components/CustomersSay';
 import Footer from './components/Footer';
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
       <Nav />
       <Header />
       <Main />
+      <CustomersSay />
       <Footer />
     </>
   );
